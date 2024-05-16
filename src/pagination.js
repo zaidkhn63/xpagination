@@ -73,7 +73,8 @@ const EmployeePagination = () => {
         <button onClick={prevPage} >
           Previous
         </button>
-        <span>{currentPage}</span>
+        <button><span>{currentPage}</span></button>
+        
         <button onClick={nextPage}>
           Next
         </button>

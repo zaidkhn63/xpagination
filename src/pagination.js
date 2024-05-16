@@ -28,13 +28,13 @@ const EmployeePagination = () => {
 
   const nextPage = () => {
     if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+      setCurrentPage((prevPage) => prevPage + 1);
     }
   };
 
   const prevPage = () => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+      setCurrentPage((prevPage) => prevPage - 1);
     }
   };
 
@@ -70,11 +70,11 @@ const EmployeePagination = () => {
         {renderEmployees()}
       </table>
       <div>
-        <button onClick={prevPage} disabled={currentPage === 1}>
+        <button onClick={prevPage} >
           Previous
         </button>
         <span>Page {currentPage} of {totalPages}</span>
-        <button onClick={nextPage} disabled={currentPage === totalPages}>
+        <button onClick={nextPage}>
           Next
         </button>
       </div>

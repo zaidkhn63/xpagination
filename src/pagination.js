@@ -62,9 +62,9 @@ const EmployeePagination = () => {
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Role</th>
+            <th><h4>Name</h4></th>
+            <th><h4>Email</h4></th>
+            <th><h4>Role</h4></th>
           </tr>
         </thead>
         {renderEmployees()}

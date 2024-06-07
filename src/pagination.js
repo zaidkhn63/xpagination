@@ -47,9 +47,9 @@ const EmployeePagination = () => {
       <tbody>
         {pageEmployees.map((employee, index) => (
           <tr key={index}>
-            <td>{employee.name}</td>
-            <td>{employee.email}</td>
-            <td>{employee.role}</td>
+            <td><h3>{employee.name}</h3></td>
+            <td><h3>{employee.email}</h3></td>
+            <td><h3>{employee.role}</h3></td>
           </tr>
         ))}
       </tbody>
@@ -58,23 +58,23 @@ const EmployeePagination = () => {
 
   return (
     <div>
-      <h2>Employee Data</h2>
+      <h1>Employee Data</h1>
       <table>
         <thead>
           <tr>
-            <th><h4>Name</h4></th>
-            <th><h4>Email</h4></th>
-            <th><h4>Role</h4></th>
+            <th><h2>Name</h2></th>
+            <th><h2>Email</h2></th>
+            <th><h2>Role</h2></th>
           </tr>
         </thead>
         {renderEmployees()}
         <div>
-        <button onClick={prevPage} >
-         <p>Previous</p>
+        <button type='button' onClick={prevPage} >
+         Previous
         </button>
         <span>{currentPage}</span>
-        <button onClick={nextPage}>
-          <p>Next</p>
+        <button type='button' onClick={nextPage}>
+          Next
         </button>
       </div>
       </table>

@@ -68,18 +68,16 @@ const EmployeePagination = () => {
           </tr>
         </thead>
         {renderEmployees()}
-        </table>
-        <div>
-        <button type='button' onClick={prevPage} >
-         Previous
+      </table>
+      <div>
+        <button type='button' onClick={prevPage}>
+          Previous
         </button>
         <div>{currentPage}</div>
         <button type='button' onClick={nextPage}>
           Next
         </button>
       </div>
-    
-     
     </div>
   );
 };
